@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+skinparam classAttributeIconSize 0
+
+class Celda{
+-ficha: int
+
++Celda()
++es_celda_ocupada(): bool
++colocar_ficha(ficha: int)
++es_igual(celda: Celda): bool
++mostrar(ficha_vacio: char, ficha_jugador_1: char, ficha_jugador_2: char)
+}
+
+@enduml

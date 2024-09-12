@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+!include Celda.puml
+!include linea.puml
+
+skinparam classAttributeIconSize 0
+
+class Tablero {
+-ficha1: char
+-ficha2: char
+-es_turno_jugador1: bool
+
++Tablero(ficha1: char, ficha2: char)
++es_jugada_valida(int i, int j): bool
++colocar_ficha(int i, int j)
++hay_ganador(): bool
++obtener_ganador(): char
++reiniciar_tablero()
++mostrar()
+}
+
+Tablero "1"-left->"9" Celda
+Tablero "1"-->"8" Linea
+Linea "1"-->"3" Celda
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+skinparam classAttributeIconSize 0
+
+class Linea{
++Linea(celda1: Celda, celda2: Celda, celda3: Celda)
++es_linea_ganadora(): bool
+}
+
+@enduml
